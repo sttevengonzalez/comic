@@ -1,0 +1,40 @@
+.escena{
+position: relative;
+width: 600px;
+height: 400px;
+background-color: #f0f0f0;
+}
+.personaje{
+position: relative;
+width:  100px;
+height: 150;
+left: 0%;
+animation: caminar 4s infinite;
+}
+
+@keyframes caminar{
+0%{
+left: 0;
+}
+100%{
+left: 500px;
+}
+}
+.texto{
+position: absolute;
+font-size: 24px;
+font-weight:  bold;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+opacity: 0;
+animation: aparecer 2s 3s;
+}
+@keyframes caminar{
+    0%{
+    opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
